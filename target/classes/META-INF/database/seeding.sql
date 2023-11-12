@@ -27,7 +27,7 @@ INSERT INTO tb_funcionarios(matricula, data_admissao, id_endereco, email, nome) 
 INSERT INTO tb_funcionarios(matricula, data_admissao, id_endereco, email, nome) VALUES ('10', '2022/08/09', 1, 'joao@locadora.com', 'Joao Santos');
 
 --carga locacao
-INSERT INTO tb_locacoes (diaria, km_final, km_inicial, data_entrada, data_saida, id_cliente, id_funcionario, id_veiculo) VALUES(85.00, 100.00, 200.00, '2023/09/10 08:00:00', '2023/11/10 18:00:00', 1, 1, 1);
+INSERT INTO tb_locacoes (diaria, km_final, km_inicial, data_entrada, data_saida, id_cliente, id_funcionario, id_veiculo) VALUES(2, 100.00, 200.00, '2023/09/10 08:00:00', '2023/11/10 18:00:00', 1, 1, 1);
 
 
 
