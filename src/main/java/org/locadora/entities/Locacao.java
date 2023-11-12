@@ -22,7 +22,7 @@ public class Locacao {
     private LocalDateTime datasaida;
     @Column(name = "data_entrada")
     private LocalDateTime entrada;
-    private BigDecimal diaria;
+    private Integer diaria;
     @Column(name = "km_inicial")
     private BigDecimal kminicial;
     @Column(name = "km_final")
@@ -40,6 +40,10 @@ public class Locacao {
     @JoinColumn(name = "id_cliente")
     private Cliente cliente;
 
+    @OneToOne(mappedBy = "locacao")
+    private NotaFiscal notaFiscal;
+
+
     @Override
     public String toString() {
         return "Locacao{" +
@@ -52,6 +56,7 @@ public class Locacao {
                 ", veiculo=" + veiculo +
                 ", funcionario=" + funcionario +
                 ", cliente=" + cliente +
+                ", notaFiscal=" + notaFiscal +
                 '}';
     }
 }
