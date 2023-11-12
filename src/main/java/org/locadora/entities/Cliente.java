@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import org.locadora.entities.enums.TipoCliente;
 
 @Getter
 @Setter
@@ -16,26 +17,24 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
-    private String cpf;
-    private String email;
-    private String celular;
-    private String telefone;
+    @Enumerated(EnumType.STRING)
+    private TipoCliente tipocliente;
 
     @ManyToOne
-    @JoinColumn(name = "id_endereco")
-    private Endereco endereco;
+    @JoinColumn(name = "id_cliente_pf")
+    private ClientePF clientePF;
+
+    @ManyToOne
+    @JoinColumn(name = "id_cliente_cnpj")
+    private ClienteCNPJ clienteCNPJ;
 
     @Override
     public String toString() {
         return "Cliente{" +
                 "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", email='" + email + '\'' +
-                ", celular='" + celular + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", endereco=" + endereco +
+                ", tipocliente=" + tipocliente +
+                ", clientePF=" + clientePF +
+                ", clienteCNPJ=" + clienteCNPJ +
                 '}';
     }
 }
