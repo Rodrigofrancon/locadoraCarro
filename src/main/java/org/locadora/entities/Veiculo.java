@@ -41,9 +41,7 @@ public class Veiculo {
     @JoinColumn(name = "id_empresa")
     private Empresa empresa;
 
-    @Override
-
-    @Override
+     @Override
     public String toString() {
         return "Veiculo{" +
                 "id=" + id +
