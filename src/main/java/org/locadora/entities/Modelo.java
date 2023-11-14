@@ -10,7 +10,6 @@ import lombok.Setter;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "tb_modelos")
-
 public class Modelo {
     @EqualsAndHashCode.Include
     @Id

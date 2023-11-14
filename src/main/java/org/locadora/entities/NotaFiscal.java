@@ -14,7 +14,6 @@ import java.math.BigDecimal;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "tb_notas_fiscais")
-
 public class NotaFiscal {
     @EqualsAndHashCode.Include
     @Id

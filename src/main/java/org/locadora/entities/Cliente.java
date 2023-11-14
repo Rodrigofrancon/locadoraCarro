@@ -11,7 +11,6 @@ import org.locadora.entities.enums.TipoCliente;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "tb_clientes")
-
 public class Cliente {
     @EqualsAndHashCode.Include
     @Id

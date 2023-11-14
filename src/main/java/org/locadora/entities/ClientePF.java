@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "tb_clientes_pfs")
-
 public class ClientePF {
     @EqualsAndHashCode.Include
     @Id

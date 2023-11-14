@@ -13,7 +13,6 @@ import java.util.Date;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 @Table(name = "tb_funcionarios")
-
 public class Funcionario {
 
     @EqualsAndHashCode.Include
