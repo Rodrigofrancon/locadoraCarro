@@ -18,8 +18,8 @@ public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String renanvan;
-    private String palca;
+    private String renavan;
+    private String placa;
     @Column(name = "ano_fabricacao")
     private String anofabricacao;
     private String chassi;
@@ -42,16 +42,18 @@ public class Veiculo {
     private Empresa empresa;
 
     @Override
+
+    @Override
     public String toString() {
         return "Veiculo{" +
                 "id=" + id +
-                ", renanvan='" + renanvan + '\'' +
-                ", palca='" + palca + '\'' +
+                ", renavan='" + renavan + '\'' +
+                ", placa='" + placa + '\'' +
                 ", anofabricacao='" + anofabricacao + '\'' +
                 ", chassi='" + chassi + '\'' +
                 ", cor='" + cor + '\'' +
                 ", modelofabricacao='" + modelofabricacao + '\'' +
-                ", datacompra=" + datacompra +
+                ", datacompra='" + datacompra + '\'' +
                 ", modelo=" + modelo +
                 ", marca=" + marca +
                 ", empresa=" + empresa +
