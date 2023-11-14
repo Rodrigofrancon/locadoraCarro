@@ -3,8 +3,6 @@ package org.locadora;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import org.locadora.entities.Endereco;
-import org.locadora.entities.Modelo;
 
 public class Main {
     public static void main(String[] args) {

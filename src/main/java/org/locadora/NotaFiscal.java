@@ -1,4 +1,4 @@
-package org.locadora.entities;
+package org.locadora;
 
 
 import jakarta.persistence.*;

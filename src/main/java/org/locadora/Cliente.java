@@ -1,10 +1,10 @@
-package org.locadora.entities;
+package org.locadora;
 
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import org.locadora.entities.enums.TipoCliente;
+import org.locadora.enums.TipoCliente;
 
 @Getter
 @Setter

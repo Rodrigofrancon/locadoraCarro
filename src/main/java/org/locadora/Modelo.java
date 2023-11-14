@@ -1,4 +1,4 @@
-package org.locadora.entities;
+package org.locadora;
 
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
@@ -9,23 +9,19 @@ import lombok.Setter;
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "tb_contatos")
-public class Contato {
+@Table(name = "tb_modelos")
+public class Modelo {
     @EqualsAndHashCode.Include
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String celular;
-    private String telefone;
-    private String email;
+    private String modelo;
 
     @Override
     public String toString() {
-        return "Contato{" +
+        return "Modelo{" +
                 "id=" + id +
-                ", celular='" + celular + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", email='" + email + '\'' +
+                ", modelo='" + modelo + '\'' +
                 '}';
     }
 }

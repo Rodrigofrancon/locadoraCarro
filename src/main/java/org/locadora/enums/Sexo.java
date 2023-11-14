@@ -1,4 +1,4 @@
-package org.locadora.entities.enums;
+package org.locadora.enums;
 
 public enum Sexo {
 
